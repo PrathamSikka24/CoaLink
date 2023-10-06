@@ -118,3 +118,17 @@ a {
     text-align: right; /* Align button to the right */
 }
 
+.data{
+    display: none;
+
+}
+/*This code is used to bring the google
+ sign in button in the front of the page*/
+
+.g-signin2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
