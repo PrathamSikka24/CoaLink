@@ -6,9 +6,22 @@
     <title>Login - CoalLink</title>
     <!-- Link to the external CSS file (styles.css) -->
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="google-signin-client_id" content="179331383704-hesdapijj75h2dloor5ohl10b3rrij4u.apps.googleusercontent.com">
 </head>
 <body>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
     <div class="container">
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="data">
+            <p>Name</p>
+            <p id="alert alert-success"></p>
+            <p>Profile Picture</p>
+            <img id="image" class="rounded-circle" width="100" height="100">
+            <p>Email</p>
+        <p id="email"></p>
+<button type="button" class="btn btn-danger" onclick="signOut();">
+    </div>
         <h1>Login to CoalLink</h1>
         <div class="white-container">
             <form>
